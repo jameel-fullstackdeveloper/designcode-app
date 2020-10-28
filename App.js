@@ -35,8 +35,6 @@ export default function App() {
           text={logo.text}
       />
       ))}
-      
-
      </ScrollView> 
 
       <SubTitle>Learning Continue...</SubTitle>
