@@ -1,7 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import styled from 'styled-components'
-
+import Card from './components/Card';
 
 export default function App() {
   return (
@@ -11,9 +10,24 @@ export default function App() {
         <Title>Welcome back,</Title>
         <Name>Jameel</Name>
       </Titlebar>
+      <SubTitle>Learning Continue...</SubTitle>
+
+      <Card></Card>
+
     </Container>
   );
 }
+
+const Container = styled.View`
+  flex:1;
+  background-color:#f0f3f5;
+  
+`
+const Titlebar = styled.View`
+  width:100%;
+  margin-top:50px;
+  padding-left:80px;
+`
 
 const Avatar = styled.Image`
     width:44px;
@@ -23,12 +37,6 @@ const Avatar = styled.Image`
     position:absolute;
     top:0px;
     left:0px;
-`
-
-const Container = styled.View`
-  flex:1;
-  background-color:#f0f3f5;
-  
 `
 const Title = styled.Text`
   font-size: 16px;
@@ -42,9 +50,13 @@ const Name = styled.Text`
   color:#3c4560;
   
 `
-
-const Titlebar = styled.View`
-  width:100%;
+const SubTitle = styled.Text`
+  font-size:15px;
+  text-transform:uppercase;
+  color:#b8bece;
+  font-weight:600;
   margin-top:50px;
-  padding-left:80px;
+  margin-left:20px;
 `
+
+
