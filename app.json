@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "designcode-app",
-    "slug": "designcode-app",
+    "name": "designcode-app-fullstackdev",
+    "slug": "designcode-app-fullstackdev",
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/icon.png",
@@ -21,6 +21,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "this is just for testing"
   }
 }

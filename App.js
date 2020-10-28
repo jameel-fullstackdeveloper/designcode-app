@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView } from 'react-native';
+import { ScrollView} from 'react-native';
 import styled from 'styled-components'
 import Card from './components/Card';
 
@@ -13,7 +13,7 @@ export default function App() {
       </Titlebar>
       <SubTitle>Learning Continue...</SubTitle>
 
-      <ScrollView horizontal={true}>
+      <ScrollView horizontal={true} style={{paddingBottom:10}} showsHorizontalScrollIndicator={false}>
         <Card 
           image={require('./assets/background2.jpg')} 
           title="Styled Components"
