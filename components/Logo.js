@@ -3,7 +3,7 @@ import styled from 'styled-components/native'
 
 const Logo = (props) => (
     <Container>
-        <Image source={props.image} resizeMode="containt"/>
+        <Image source={props.image} resizeMode="contain"/>
         <Text>{props.text}</Text>
     </Container>
 )
@@ -30,3 +30,5 @@ const Text = styled.Text`
     font-size:17px;
     margin-left:8px;
 `
+
+
