@@ -1,15 +1,25 @@
 import React from 'react';
-import { ScrollView} from 'react-native';
+import { SafeAreaView,ScrollView } from 'react-native';
 import styled from 'styled-components/native'
 import Card from './components/Card';
+
+import { Ionicons } from '@expo/vector-icons'
 
 export default function App() {
   return (
     <Container>
+      <SafeAreaView>
+        <ScrollView>
       <Titlebar>
         <Avatar source={require("./assets/avatar.jpg")} />
         <Title>Welcome back,</Title>
         <Name>Jameel</Name>
+        <Ionicons  
+          name ="ios-notifications"
+          size={32}
+          color="#4775f2"
+          style= {{ position : "absolute", right:20, top:5}}
+        />
       </Titlebar>
       <SubTitle>Learning Continue...</SubTitle>
 
@@ -30,8 +40,9 @@ export default function App() {
            subtitle="SECTION 2 OF 10 "
         
            ></Card>
+        </ScrollView>
       </ScrollView>
-
+    </SafeAreaView>
     </Container>
   );
 }
