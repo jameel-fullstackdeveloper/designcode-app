@@ -2,7 +2,7 @@ import React from 'react';
 import { SafeAreaView,ScrollView } from 'react-native';
 import styled from 'styled-components/native'
 import Card from './components/Card';
-
+import Logo from './components/Logo'
 import { Ionicons } from '@expo/vector-icons'
 
 export default function App() {
@@ -21,9 +21,26 @@ export default function App() {
           style= {{ position : "absolute", right:20, top:5}}
         />
       </Titlebar>
+
+    <ScrollView 
+      horizontal={true}
+      style={{flexDirection:"row", padding:20, paddingLeft:12, paddingTop:30}}
+      >
+      <Logo
+        image={require('./assets/logo-framerx.png')}
+        text="Frame X"
+      />
+  <Logo
+        image={require('./assets/logo-react.png')}
+        text="React"
+      />
+
+     </ScrollView> 
+
       <SubTitle>Learning Continue...</SubTitle>
 
-      <ScrollView horizontal={true} style={{paddingBottom:10}} showsHorizontalScrollIndicator={false}>
+      <ScrollView horizontal={true} 
+      style={{paddingBottom:10}} showsHorizontalScrollIndicator={false}>
         <Card 
           image={require('./assets/background2.jpg')} 
           title="Styled Components"
@@ -84,7 +101,7 @@ const SubTitle = styled.Text`
   text-transform:uppercase;
   color:#b8bece;
   font-weight:600;
-  margin-top:50px;
+  margin-top:20px;
   margin-left:20px;
 `
 
