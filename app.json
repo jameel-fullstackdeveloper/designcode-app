@@ -22,6 +22,7 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "this is just for testing"
+    "description": "this is just for testing",
+    "githubUrl": "https://github.com/jameel-fullstackdeveloper/designcode-app.git"
   }
 }
