@@ -1,4 +1,5 @@
 import React from 'react';
+import { ScrollView } from 'react-native';
 import styled from 'styled-components'
 import Card from './components/Card';
 
@@ -12,7 +13,24 @@ export default function App() {
       </Titlebar>
       <SubTitle>Learning Continue...</SubTitle>
 
-      <Card></Card>
+      <ScrollView horizontal={true}>
+        <Card 
+          image={require('./assets/background2.jpg')} 
+          title="Styled Components"
+          logo={require("./assets/logo-react.png")}
+          caption="React"
+          subtitle="SECTION 1 OF 10 "
+          
+          ></Card>
+        <Card 
+           image={require('./assets/background5.jpg')}
+           title="Swift Componen"
+           logo={require("./assets/logo-figma.png")}
+           caption="Figma"
+           subtitle="SECTION 2 OF 10 "
+        
+           ></Card>
+      </ScrollView>
 
     </Container>
   );
